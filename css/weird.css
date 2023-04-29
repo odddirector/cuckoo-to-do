@@ -1,0 +1,105 @@
+/* ChatGPT prompt: take the following html and write the most bizarre, absurd and outrageous css for it.  */
+body {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    transform: scale(2);
+    vertical-align: middle;
+}
+
+input[type='textarea'] {
+    padding: 10px;
+    border: 1px solid grey;
+    font-size: 30px;
+}
+
+label {
+    margin: 0 10px;
+}
+
+.removeTask {
+    cursor: pointer;
+}
+
+/*--------------------------------------*/
+
+/* Make the entire background neon pink */
+body {
+    background-color: neonpink;
+  }
+  
+  /* Rotate the task list 180 degrees */
+  #taskList {
+    transform: rotate(180deg);
+  }
+  
+  /* Add a rainbow border to each task item */
+  li {
+    border: 5px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+  }
+  
+  /* Make the task input text rainbow-colored and animated */
+  #taskInput {
+    animation: rainbow 1s infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+    17% {
+      color: orange;
+    }
+    34% {
+      color: yellow;
+    }
+    51% {
+      color: green;
+    }
+    68% {
+      color: blue;
+    }
+    85% {
+      color: indigo;
+    }
+    100% {
+      color: violet;
+    }
+  }
+  
+  /* Add a disco ball background to completed tasks */
+  input[type=checkbox]:checked + label {
+    background-image: url('https://media.giphy.com/media/lM8X9CCB6JKFe/giphy.gif');
+    background-size: contain;
+  }
+  
+  /* Make the remove task button blink in random colors */
+  .removeTask {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      color: red;
+    }
+    25% {
+      color: green;
+    }
+    50% {
+      color: blue;
+    }
+    75% {
+      color: yellow;
+    }
+    100% {
+      color: pink;
+    }
+  }
+  

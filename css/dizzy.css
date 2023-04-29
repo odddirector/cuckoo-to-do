@@ -1,0 +1,89 @@
+/*Prompt: write acid-coloured, full of animations and weird shapes css for html this javascript generates: */
+body {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    transform: scale(2);
+    vertical-align: middle;
+}
+
+input[type='textarea'] {
+    padding: 10px;
+    border: 1px solid grey;
+    font-size: 30px;
+}
+
+label {
+    margin: 0 10px;
+}
+
+.removeTask {
+    cursor: pointer;
+}
+
+/* --------- */
+/* Define a keyframe animation */
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Style the task list */
+  #taskList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the task items */
+  #taskList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #ff00ff;
+    padding: 10px;
+    border-radius: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Style the task checkbox */
+  #taskList li input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(2);
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Style the task label */
+  #taskList li label {
+    flex: 1;
+    color: #00ffff;
+    font-size: 24px;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Style the remove task button */
+  #taskList li .removeTask {
+    color: #ffff00;
+    font-size: 24px;
+    cursor: pointer;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Style the remove task button on hover */
+  #taskList li .removeTask:hover {
+    color: #ff0000;
+  }
+
+  

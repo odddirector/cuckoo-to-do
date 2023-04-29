@@ -1,0 +1,146 @@
+body {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    transform: scale(2);
+    vertical-align: middle;
+}
+
+input[type='textarea'] {
+    padding: 10px;
+    border: 1px solid grey;
+    font-size: 30px;
+}
+
+label {
+    margin: 0 10px;
+}
+
+.removeTask {
+    cursor: pointer;
+}
+
+/* --------- */
+body {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    transform: scale(2);
+    vertical-align: middle;
+}
+
+input[type='textarea'] {
+    padding: 10px;
+    border: 1px solid grey;
+    font-size: 30px;
+}
+
+label {
+    margin: 0 10px;
+}
+
+.removeTask {
+    cursor: pointer;
+}
+
+/*--------------------------------------*/
+/* randomly rotate the task list items */
+li {
+    animation: spin 3s infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* make the task list items disappear on hover */
+  li:hover {
+    animation: vanish 1s forwards;
+  }
+  
+  @keyframes vanish {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  
+  /* add a psychedelic background to the task list */
+  body {
+    background: linear-gradient(to bottom, #ff00ff, #00ff00, #00ffff, #ff00ff);
+    background-size: 400% 400%;
+    animation: rainbow 10s infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* make the task list look like a disco ball */
+  #taskList {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #ffffff, #cccccc);
+    box-shadow: 0 0 50px #ffffff, inset 0 0 50px #ffffff;
+    animation: disco 5s infinite;
+  }
+  
+  @keyframes disco {
+     0% {
+       transform: rotateZ(0deg);
+     }
+     100% {
+       transform: rotateZ(360deg);
+     }
+  }
+  
+  /* make the remove task button blink */
+  .removeTask {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
